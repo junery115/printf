@@ -6,7 +6,7 @@
  * print_special_chars - prints special characters
  * @next: character after %
  * @arg: argument for identifier
- * @Return: number of chars printed
+ * Return: number of chars printed
  */
 
 int print_special_chars(char next, va_list arg)

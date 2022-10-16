@@ -3,6 +3,12 @@
 
 #include <stdarg.h>
 
+/**
+ * struct identifiers - struct definition of a printTypeStruct
+ * @identifier: type
+ * @printer: function to print
+ */
+
 typedef struct identifiers
 {
 	char *identifier;
