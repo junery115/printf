@@ -65,4 +65,19 @@ int print_int(va_list arg)
 	return (char_printed);
 }
 
+/**
+ * print_unsigned_to_binary - prints a binary
+ * @arg: argument
+ * Return: int
+ */
+
+int print_unsigned_to_binary(va_list arg)
+{
+	unsigned int num = va_arg(arg, unsigned int);
+	unsigned int print;
+
+	print_binary(num, &print);
+
+	return (print);
+}
 

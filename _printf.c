@@ -18,6 +18,7 @@ int print_special_chars(char next, va_list arg)
 		{"s", print_str},
 		{"d", print_int},
 		{"i", print_int},
+		{"b", print_unsigned_to_binary},
 		{NULL, NULL}
 	};
 
