@@ -36,3 +36,33 @@ int print_str(va_list arg)
 	return (i);
 }
 
+/**
+ * print_int - prints an integer
+ * @arg: argument
+ * Return: characters printed
+ */
+
+int print_int(va_list arg)
+{
+	unsigned int divisor = 1, i, rem, char_printed = 0;
+	int num = va_arg(arg, int);
+
+	if (num < 0)
+	{
+		_putchar('-');
+		char_printed++;
+		num *= -1;
+	}
+
+	for (i = 0; num / divisor > 9; i++, divisor *= 10)
+		;
+
+	for (; divisor >= 1; num %= divisor, divisor /= 10, char_printed++)
+	{
+		rem = num / divisor;
+		_putchar('0' + rem);
+	}
+	return (char_printed);
+}
+
+

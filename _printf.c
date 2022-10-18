@@ -16,6 +16,8 @@ int print_special_chars(char next, va_list arg)
 	identifiers ids[] = {
 		{"c", print_char},
 		{"s", print_str},
+		{"d", print_int},
+		{"i", print_int},
 		{NULL, NULL}
 	};
 
